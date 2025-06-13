@@ -38,7 +38,7 @@ export default function ContactPage() {
   return (
     <>
       <FloatingNav />
-      <main className="pt-40 flex flex-col items-center justify-center px-4 py-16 text-center">
+      <main className="pt-40 min-h-screen bg-gradient-to-br from-purple-400 to-orange-200 flex flex-col items-center justify-center px-4 py-16 text-center">
         <h1 className="text-4xl font-extrabold mb-4">
           Contact <span className="text-blue-500">Softwarerror</span>
         </h1>
@@ -55,6 +55,7 @@ export default function ContactPage() {
               value={formData.name}
               required
               placeholder="Your Name"
+              style={{ backgroundColor: '#fff', color: '#000' }}
               className="w-full border border-gray-300 rounded-md px-4 py-2"
             />
           </div>
@@ -66,6 +67,7 @@ export default function ContactPage() {
               onChange={handleChange}
               value={formData.phone}
               placeholder="+1 555 123 4567"
+              style={{ backgroundColor: '#fff', color: '#000' }}
               className="w-full border border-gray-300 rounded-md px-4 py-2"
             />
           </div>
@@ -78,6 +80,7 @@ export default function ContactPage() {
               value={formData.email}
               required
               placeholder="you@example.com"
+              style={{ backgroundColor: '#fff', color: '#000' }}
               className="w-full border border-gray-300 rounded-md px-4 py-2"
             />
           </div>
@@ -89,6 +92,7 @@ export default function ContactPage() {
               value={formData.message}
               required
               placeholder="Briefly describe your request..."
+              style={{ backgroundColor: '#fff', color: '#000' }}
               className="w-full border border-gray-300 rounded-md px-4 py-2"
               rows={4}
             />

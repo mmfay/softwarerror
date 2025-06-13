@@ -10,12 +10,12 @@ export default function AboutPage() {
         <img
           src="/images/ME.png" // Use /public/images/ME.png
           alt="Your photo"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[90%_20%]"
         />
       </div>
 
       {/* Main Content */}
-      <main className="min-h-screen flex flex-col items-center justify-center px-6 text-center space-y-6">
+      <main className="min-h-screen bg-gradient-to-br from-purple-400 to-orange-200 flex flex-col items-center justify-center px-6 text-center space-y-6">
         <h1 className="text-4xl font-extrabold tracking-tight">
           Welcome to <span className="text-blue-500">Softwarerror</span>
         </h1>
